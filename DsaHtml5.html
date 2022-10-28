@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet"  type="text/css">
+        <title>Formulário HTML5</title>
+        <meta charset="utf-8">
+    </head>
+    <body class="html5-javas">
+        <header>
+            <nav class="menu-desktop">
+                <h1>
+                    Formulário em HTML5
+                </h1>
+                <ul>
+                    <li>
+                        <a href="Index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="DsaJavaS.html">
+                            JAVS
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="conteudo">
+            <form action="destino.html" method="post">
+                <fieldset>
+                    <h1>
+                        Cadastro do professor
+                    </h1>
+                    <div class="box">
+                        <p>
+                            <span>Nome do professor:</span>
+                            <input type="text" required="required" name="txtnm" pattern="[a-z\s]+$">
+                        </p>
+                    </div>
+                    <div class="box">
+                        <p>
+                            <span>Email do Professor:</span>
+                            <input type="email" id="txtem" title="Email com @ e . " required>
+                        </p>
+                    </div>
+                    <div>
+                        <label><span>Disciplina do Professor:</span></label>
+                        <br><br> 
+                        <select id="materia">
+                            <option value="x" selected="selected"> Escolha uma disciplina</option>
+                            <option value="ds">DSA1</option>
+                            <option value="em">EMPR</option>
+                            <option value="es">ESMD</option>                            
+                            <option value="fu">FUTI</option>
+                            <option value="lo">LOGB</option>
+                            <option value="pr">PRIT</option>
+                        </select>
+                    </div>
+                    <div class="option-label">
+                        <label>
+                            <span>Qual a sua opinião sobre a navegação entre as páginas:</span>
+                            <div class="option">
+                                <div class="option-div">
+                                    <label>
+                                        <input type="radio" id="radfcl" value="fcl" name="naveg">
+                                        Fácil
+                                    </label>
+                                    <br><br>
+                                    <label>
+                                        <input type="radio" id="radmfc" value="mfc" name="naveg" checked="checked">
+                                        Muito fácil
+                                    </label>
+                                </div>
+                                <div class="option-div">
+                                    <label>
+                                        <input type="radio" id="radcmp" value="cmp" name="naveg">
+                                        Complicada
+                                    </label>
+                                    <br><br>
+                                    <label>
+                                        <input type="radio" id="radmtc" value="mtc" name="naveg">
+                                        Muito complicada
+                                    </label> 
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="option-label">
+                        <label>
+                            <span>Em relação a estética básica das páginas:</span>
+                            <div class="option">
+                                <div class="option-div">
+                                    <label>
+                                        <input type="radio" id="radfmc" value="fmc" name="esttc">
+                                        Faltou muita coisa a ser trabalhada
+                                    </label>
+                                    <br><br>
+                                    <label>
+                                        <input type="radio" id="radftr" value="ftr" name="esttc"  checked="checked">
+                                        Foi bem trabalhada
+                                    </label>
+                                </div>
+                                <div class="option-div">
+                                    <label>
+                                        <input type="radio" id="radptr" value="ptr"  name="esttc">
+                                        Poderia ser mais trabalhada
+                                    </label>
+                                    <br><br>
+                                    <label>
+                                        <input type="radio" id="radftl" value="ftl"  name="esttc">
+                                        Foi trabalhada
+                                    </label>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="option-label">
+                        <label>
+                            <span>Em relação ao conteúdo do trabalho de forma qualificativa:</span>
+                            <div class="option">
+                                <div class="option-div">
+                                    <label>
+                                        <input type="radio" id="radfpp" value="fpp"  name="qldd">
+                                        Conteúdo fora do pedido pelo professor
+                                    </label>
+                                    <br><br>
+                                    <label>
+                                        <input type="radio" id="radmsu" value="msu" name="qldd" checked="checked">
+                                        Mais que suficiente
+                                    </label>
+                                </div>
+                                <div class="option-div">
+                                    <label>
+                                        <input type="radio" id="radpsf" value="psf"  name="qldd">
+                                        Pouco suficiente
+                                    </label>
+                                    <br><br><br>
+                                    <label>
+                                        <input type="radio" id="radsfc" value="sfc" name="qldd">
+                                        Suficiente
+                                    </label>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="option-label">
+                        <label>
+                            <span>Em relação ao conteúdo do trabalho de forma quantitativa:</span>
+                            <div class="option">
+                                <div class="option-div">
+                                    <label>
+                                        <input type="radio" id="radfop" value="fop" name="quant">
+                                        Conteúdo fora do pedido pelo professor
+                                    </label>
+                                    <br><br>
+                                    <label>
+                                        <input type="radio" id="radmsc" value="msc" name="quant" checked="checked">
+                                        Mais que suficiente
+                                    </label>
+                                </div>
+                                <div class="option-div">
+                                    <label>
+                                        <input type="radio" id="radpst" value="pst" name="quant">
+                                        Pouco suficiente
+                                    </label>
+                                    <br><br><br>
+                                    <label>
+                                        <input type="radio" id="radsct" value="sct" name="quant">
+                                        Suficiente
+                                    </label>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <label>
+                            <span>Nota de zero até sete sobre o trabalho:</span>
+                            <input type="number" required="required" pattern="[0-7]+$" min="0" max="7">
+                        </label>
+                    </div>
+                    <div class="box"> 
+                        <label for="msg">
+                            <span>Comentário sobre a avaliação do trabalho:</span>
+                            <textarea id="msg" name="msg" rows="6" cols="40" required></textarea>
+                        </label>
+                    </div>
+                    <div class="right">
+                        <input type="reset" class="reset" value="Limpar formulário">
+                        <input type="submit" class="submit" value="Confirmar cadastro">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <div class="footer-desktop">
+                <div class="footer-conteudo">
+                    <h2>
+                        Trabalho feito pelos alunos: 05, 06, 12, 23, 30 e 35. 
+                    </h2>
+                </div>
+                <div class="border1"> <div class="border"></div></div>
+                <div class="bottom">
+                    <h2>
+                        Informática 1º ano A, período vespertino
+                    </h2>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

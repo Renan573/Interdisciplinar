@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            ESMD
+        </title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" href="">
+        <script src="script.js"></script>
+    </head>
+    <body id="esmd">
+        <header>
+            <nav class="menu-desktop">
+                <h1>
+                    Estrutura e Modelagem de Dados
+                </h1>
+                <ul>
+                    <li>
+                        <a href="Index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Empr.html">
+                            EMPR
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Futi.html">
+                            FUTI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Logb.html">
+                            LOGB
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Prit.html">
+                            PRIT
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="conteudo">
+            <div>
+                <img src="sql.jpeg">
+            </div>
+            <h1>
+                Linguagem SQL
+            </h1>
+            <div>
+                <h2>
+                    O que é SQL e para que serve:
+                </h2>
+                <p>
+                    SQL (Structured Query Language ou traduzindo para o português: Linguagem Estruturada de Consultas) é uma linguagem comum / padrão para se trabalhar com bancos de dados relacionais. O SQL também é uma linguagem de certa forma fácil, e não é necessita tanto o conhecimento de programação para realizar seus códigos. <br> 
+                    Porém o SQL não é apenas uma linguagem, ele é uma linguagem padrão universal usada por programadores e cientistas para manipular bancos de dados por meio dos SGBDs (Sistemas Gerenciadores de Banco de Dados).
+                </p>
+            </div>
+            <div>
+                <h2>
+                    O que é SELECT e suas opções (where, order by):
+                </h2>
+                <p>
+                    SELECT em SQL é uma declaração que retorna um certo conjunto de resultados de registros de uma ou mais tabelas. Na maioria das aplicações, o SELECT é o comando de Linguagem de Manipulação de Dados mais utilizado. <br>
+                    Junto ao SELECT há cláusulas que podem ajudar a pesquisa de dados nas tabelas, sendo algumas delas a opção WHERE e ORDER BY.
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Como usar a cláusula JOIN em SQL:
+                </h2>
+                <p>
+                    A cláusula "JOIN" em SQL é uma operação de junção em álgebra relacional, onde combina colunas de uma ou mais tabelas em um único banco de dados relacional. <br>
+                    Existem vários tipos de "JOINS", porém os dois mais usados / principáis são: INNER JOIN e o OUTER JOIN. <br>
+                    O INNER JOIN retorna as linhas (registros) quando ele encontrar pelo menos uma correspondência em ambas das tabelas.  <br>
+                    Já o OUTER JOIN, retorna as linhas mesmo quando não houver no mínimo uma correspondência em uma das tabelas. Existem três tipos de OUTER JOINS, sendo o primeiro: LEFT JOIN (onde retorna as linhas da tabela à esquerda), RIGHT JOIN (retorna as linhas da tabela à direita) e o FULL JOIN (onde retorna as linhas quando houver correspondência em qualquer uma das tabelas. Sendo uma combinação do LEFT e RIGHT JOINS).
+                </p>
+            </div>
+            <div>
+                <h3>
+                    Para usar a cláusula INNER JOIN é necessário escrever: 
+                </h3>
+                <div class="cmd">
+                    <p>
+                        SELECT colunas <br>
+                        FROM tabela1 <br>
+                        INNER JOIN tabela2 <br>
+                        ON tabela1.coluna=tabela2.coluna
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h3>
+                    Para usar a cláusula LEFT OUTER JOIN é necessário escrever:
+                </h3>
+                <div class="cmd">
+                    <p>
+                        SELECT coluna <br>
+                        FROM tabela_esq <br>
+                        LEFT (OUTER) JOIN tabela_dir <br>
+                        ON tabela_esq.coluna=tabela_dir.coluna
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h3>
+                    Para usar a cláusula RIGHT OUTER JOIN é necessário escrever:
+                </h3>
+                <div class="cmd">
+                    <p>
+                        SELECT colunas <br>
+                        FROM tabela_esq <br>
+                        RIGHT (OUTER) JOIN tabela_dir <br>
+                        ON tabela_esq.coluna=tabela_dir.coluna
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h3>
+                    Para usar a cláusula FULL OUTER JOIN é necessário escrever:
+                </h3>
+                <div class="cmd">
+                    <p>
+                        SELECT colunas <br>
+                        FROM tabela1 <br>
+                        FULL (OUTER) JOIN tabela2 <br>
+                        ON tabela1.coluna=tabela2.coluna
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-desktop">
+                <div class="footer-conteudo">
+                    <h2>
+                        Trabalho feito pelos alunos: 05, 06, 12, 23, 30 e 35. 
+                    </h2>
+                </div>
+                <div class="border1"> <div class="border"></div></div>
+                <div class="bottom">
+                    <h2>
+                        Informática 1º ano A, período vespertino
+                    </h2>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

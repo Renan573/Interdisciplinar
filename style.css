@@ -1,0 +1,666 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #F8EDEC;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes animconteudo {
+    from {padding-top: 200px; opacity: 10%;}
+    to {padding-top: 100px; opacity: 100%;}
+}
+
+@keyframes home {
+    from {background-color: #FFF;}
+    to {background-color: #1714db;}
+}
+
+@keyframes homeconteudo {
+    from {background-color: #FFF;}
+    to {background-color: #3e3bfa;}
+}
+
+@keyframes homefooter {
+    from {background-color: #FFF;}
+    to {background-color: #1411cf;}
+}
+
+.menu-desktop {
+    width: 100%;
+    position: fixed;
+    animation-name: home;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 4;
+}
+
+.menu-desktop ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-desktop h1 {
+    display: flex;
+    font-size: 1.8rem;
+    padding: 12px;
+    justify-content: center;
+}
+
+.menu-desktop li {
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    padding-top: 12px; padding-bottom: 13px;
+    padding-left: 4%; padding-right: 4%;
+}
+
+.menu-desktop a {
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.menu-desktop ul li:hover {
+    transition: 0.15s;
+    background-color: #1916c5e8;
+}
+
+.menu-desktop a:hover {
+    transition: 0.15s;
+    transform: scale(1.05);
+}
+
+#home .conteudo {
+    animation-name: animconteudo, homeconteudo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-image: url(indeximg.jpg);
+    background-repeat: no-repeat;
+    background-size: 300% 100%;
+}
+
+.footer-desktop {
+    animation-name: homefooter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    width: 100%;
+    padding-top: 20px; padding-bottom: 10px;
+    z-index: 1;
+}
+
+.footer-desktop .footer-conteudo, .bottom {
+    width: 100%;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+}
+
+.footer-desktop .footer-conteudo li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.footer-desktop .footer-conteudo h2, .footer-desktop .bottom h2{
+    font-size: 1.1rem;
+}
+
+.border1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; padding-bottom: 20px;
+}
+
+.border {
+    width: 90%;
+    border-bottom: 2px solid #FFF;
+}
+
+.conteudo {
+    position: relative;
+    top: 10px;
+    padding-left: 20%; padding-right: 20%;
+    padding-top: 100px; padding-bottom: 60px;
+}
+
+#img-index {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+#img-index h1 {
+    color: rgb(102, 103, 104);
+}
+
+.aluno{
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(60, 112, 209);
+    background-color: rgb(91, 130, 202);
+    border-radius: 64px;
+    gap: 5%;
+    padding: 5%;
+    margin: 16px;
+    margin-bottom: 64px;
+}
+
+.aluno img{
+    border-radius: 100%;
+    transition: 0.15s;
+    width: 40%;
+    height: 40%;
+}
+
+.aluno img:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+@keyframes logb {
+    from {background-color: #FFF;}
+    to {background-color: #28C20C;}
+}
+
+@keyframes logbconteudo {
+    from {background-color: #FFF;}
+    to {background-color: #53cc70;}
+}
+
+@keyframes logbfooter {
+    from {background-color: #FFF;}
+    to {background-color: #17C204;}
+}
+
+#logb .menu-desktop{
+    animation-name: logb;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#logb .footer-desktop{
+    animation-name: logbfooter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#logb .conteudo{
+    animation-name: animconteudo, logbconteudo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#logb .menu-desktop ul li:hover {
+    transition: 0.15s;
+    background-color: #28a112d3;
+}
+
+@keyframes prit {
+    from {background-color: #FFF;}
+    to {background-color: #FF8017;}
+}
+
+@keyframes pritconteudo {
+    from {background-color: #FFF;}
+    to {background-color: #FF983C;}
+}
+
+@keyframes pritfooter {
+    from {background-color: #FFF;}
+    to {background-color: #FF7611;}
+}
+
+#prit .menu-desktop{
+    animation-name: prit;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#prit .footer-desktop{
+    animation-name: pritfooter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#prit .conteudo{
+    animation-name: animconteudo, pritconteudo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#prit .menu-desktop ul li:hover {
+    transition: 0.15s;
+    background-color: #da6d14d8;
+}
+
+@keyframes esmd {
+    from {background-color: #FFF;}
+    to {background-color: #1236FA;}
+}
+
+@keyframes esmdconteudo {
+    from {background-color: #FFF;}
+    to {background-color: #2D7FFA;}
+}
+
+@keyframes esmdfooter {
+    from {background-color: #FFF;}
+    to {background-color: #0F32FA;}
+}
+
+#esmd .menu-desktop{
+    animation-name: esmd;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#esmd .footer-desktop{
+    animation-name: esmdfooter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#esmd .conteudo{
+    animation-name: animconteudo, esmdconteudo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#esmd .menu-desktop ul li:hover {
+    transition: 0.15s;
+    background-color: #0e2cdaec;
+}
+
+@keyframes futi {
+    from {background-color: #FFF;}
+    to {background-color: #C2520D;}
+}
+
+@keyframes futiconteudo {
+    from {background-color: #FFF;}
+    to {background-color: #EB7B4B;}
+}
+
+@keyframes futifooter {
+    from {background-color: #FFF;}
+    to {background-color: #C24800;}
+}
+
+#futi .menu-desktop{
+    animation-name: futi;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#futi .footer-desktop{
+    animation-name: futifooter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#futi .conteudo{
+    animation-name: animconteudo, futiconteudo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#futi .menu-desktop ul li:hover {
+    transition: 0.15s;
+    background-color: #ac4a0dde;
+}
+
+@keyframes empr {
+    from {background-color: #FFF;}
+    to {background-color: #FF8017;}
+}
+
+@keyframes emprconteudo {
+    from {background-color: #FFF;}
+    to {background-color: #FF983C;}
+}
+
+@keyframes emprfooter {
+    from {background-color: #FFF;}
+    to {background-color: #FF7611;}
+}
+
+#empr .menu-desktop{
+    animation-name: empr;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#empr .footer-desktop{
+    animation-name: emprfooter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#empr .conteudo{
+    animation-name: animconteudo, emprconteudo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#empr .menu-desktop ul li:hover {
+    transition: 0.15s;
+    background-color: #da6d14d8;
+}
+
+.html5-javas fieldset{
+    margin-top: 64px;
+    padding: 5%;
+    background: #141e30;
+    border: none;
+    border-radius: 10px;
+}
+
+.html5-javas option, .html5-javas select{
+    background-color:#243b55; 
+}
+
+.html5-javas select{
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+}
+
+.html5-javas section div {
+    padding: 16px;
+}
+
+.html5-javas section h1 {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.box {
+    position: relative;
+}
+
+.box input, .box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    outline: none;
+    background: transparent;
+}
+
+.box textarea{
+    resize: none;
+}
+
+@keyframes form {
+    from {background-color: #FFF;}
+    to {background-color: #172f4d;}
+}
+
+@keyframes formconteudo {
+    from {background-color: #FFF;}
+    to {background-color: #243b55;}
+}
+
+@keyframes formfooter {
+    from {background-color: #FFF;}
+    to {background-color: #132b49;}
+}
+
+.html5-javas .menu-desktop{
+    animation-name: form;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.html5-javas .footer-desktop{
+    animation-name: formfooter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.html5-javas .conteudo{
+    animation-name: animconteudo, formconteudo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.html5-javas .menu-desktop ul li:hover {
+    transition: 0.15s;
+    background-color: #1c416ee5;
+}
+
+.html5-javas label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.html5-javas span {
+    padding-top: 16px; padding-bottom: 12px;
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+.option-label {
+    width: 90%;
+} 
+
+.option{
+    padding: 0!important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-div {
+    width: 100%;
+}
+
+.html5-javas input[type="radio"]{
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.25em solid currentColor;
+    border-radius: 50%;
+}
+
+.html5-javas input[type="radio"]:checked {
+    background-color: #325680;
+}
+
+.option-div label {
+    display: flex;
+    gap: 8px;
+}
+
+.submit {
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 550;
+    padding: 8px 14px;
+    background-color: #325680;
+}
+
+.reset {
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 550;
+    padding: 8px 14px;
+    background-color: #243b55;
+}
+
+.submit:hover, .reset:hover {
+    transition: 0.3s;
+    transform: scale(1.015);
+}
+
+.right {
+    display: flex;
+    gap: 5%;
+    float: right;
+}
+
+#logb section h1, #prit section h1, #esmd section h1, #futi section h1, #empr section h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 32px;
+}
+
+#logb section h2, #prit section h2, #esmd section h2, #futi section h2, #empr section h2{
+    padding: 5%;
+    font-size: 1.6rem;
+    font-weight: 550;
+}
+
+#prit section h3, #esmd section h3, #futi section h3, #empr section h3 {
+    padding: 3%;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#logb section p, #prit section p, #esmd section p, #futi section p, #empr section p {
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.img-exc {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#logb section img {
+    width: 35%;
+    border: 2px solid #54aa68;
+    padding: 5px;
+    padding-bottom: 32px;
+    background-color: #FFF;
+}
+
+.img-right {
+    display: flex;
+    float: right;
+    margin-left: 20px; margin-bottom: 15px;
+}
+
+.img-left {
+    display: flex;
+    float: left;
+    margin-right: 20px; margin-bottom: 15px;
+}
+
+#btn-prot a{
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #C2520D;
+    text-decoration: none;
+}
+
+#btn-prot:hover{
+    transition: 0.3s;
+    transform: scale(1.02);
+}
+
+.cmd {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(22, 22, 22);
+}
+
+.cmd p {
+    font-size: 1.1rem !important;
+    margin: 15px;
+}
+
+#esmd img {
+    width: 100%
+}
+
+.btn {
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #0d61c2;
+    text-decoration: none;
+}
+
+.btn:hover{
+    transition: 0.3s;
+    transform: scale(1.02);
+}
+
+#btn-form {
+    display:flex;
+    gap: 6%;
+}
+
+.collums {
+    width: 100%;
+    display: flex;
+}
+
+.collums-div {
+    width: 80%;
+}
+
+.collums-div h2, .collums-div h3, .collums-div p{
+    display: flex;
+    justify-content: center;
+}
+
+#futi .collums-div img {
+    border: 2px solid #af5f3d;
+    border-radius: 6px;
+    box-shadow: 0px 10px 18px #af5f3d;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.center {
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+
+#prit img, #empr img{
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.social-icons a img{
+    border-radius: 50% !important;
+    width: 30% !important;
+}
